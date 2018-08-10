@@ -1,0 +1,15 @@
+{
+  "name": "renderinghtml",
+  "version": "1.0.0",
+  "description": "Rendering test app",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Johnny Villegas",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.5.8",
+    "express": "^4.16.3"
+  }
+}

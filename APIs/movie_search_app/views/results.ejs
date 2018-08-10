@@ -1,0 +1,9 @@
+<h1>Results Page</h1>
+
+<% data["Search"].forEach(function(movie) { %>
+   <strong><li><%= movie["Title"] %></strong> - Year Released: <%= movie["Year"] %> - Type: <%= movie["Type"] %></li>
+<% }); %>
+
+<form action="/">
+    <button>Go Back</button>
+</form>
