@@ -16,11 +16,11 @@ var express                     = require("express"),
     passportLocalMongoose       = require("passport-local-mongoose"),
     seedDB                      = require("./seeds");
 
-//requiring routes    
+//requiring routes
 var commentRoutes               = require("./routes/comments"),
     campgroundRoutes            = require("./routes/campgrounds"),
     indexRoutes                 = require("./routes/index");
-    
+
 
 //==================================================================
 // Mongoose/Body Parser/ View Engine
@@ -67,7 +67,7 @@ app.use("/campgrounds",campgroundRoutes);
 //==================================================================
 // APP.LISTEN Route
 //==================================================================
-
-app.listen(process.env.PORT, process.env.IP, function(){
-    console.log("The YelpCamp Server Has Started.");
+// process.env.PORT
+app.listen(8000, process.env.IP, function(){
+    console.log("The YelpCamp Server Has Started on Port 8000.");
 });
